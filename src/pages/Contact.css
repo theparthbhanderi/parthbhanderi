@@ -1,0 +1,122 @@
+.contact-page {
+    min-height: 100vh;
+}
+
+.pt-200 {
+    padding-top: 180px;
+}
+
+@media (max-width: 768px) {
+    .pt-200 {
+        padding-top: 96px;
+    }
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: var(--space-12);
+}
+
+/* Intro Side */
+.contact-title {
+    font-size: var(--font-size-display);
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: var(--space-4);
+}
+
+.contact-desc {
+    font-size: 20px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: var(--space-12);
+    max-width: 450px;
+}
+
+.trust-item {
+    margin-bottom: var(--space-8);
+}
+
+.trust-item h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: var(--space-1);
+}
+
+.trust-item p {
+    font-size: 16px;
+    color: var(--color-text-secondary);
+}
+
+/* Form Side */
+.contact-form-card {
+    padding: var(--space-8) !important;
+}
+
+.form-group {
+    margin-bottom: var(--space-6);
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-2);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    color: var(--color-text-primary);
+    /* iOS style input */
+    transition: all 0.2s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    background: var(--color-surface);
+    border-color: var(--color-text-secondary);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.03);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+}
+
+/* Select custom arrow hack would be here, skipping for simplicity */
+
+.full-width {
+    width: 100%;
+}
+
+.form-footer {
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    margin-top: var(--space-4);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-8);
+    }
+
+    .contact-title {
+        font-size: 40px;
+    }
+}

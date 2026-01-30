@@ -1,0 +1,217 @@
+/* Page specific styles */
+.home-page {
+    min-height: 100vh;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 80px 0;
+    }
+}
+
+.bg-surface {
+    background-color: var(--color-surface);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.content-narrow {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: var(--space-4);
+    letter-spacing: -0.5px;
+}
+
+.section-desc {
+    font-size: 20px;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+.section-header-flat {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    margin-bottom: var(--space-8);
+}
+
+/* Hero */
+.hero-section {
+    padding: clamp(96px, 12vh, 200px) 0 clamp(48px, 10vh, 140px);
+    text-align: center;
+}
+
+.hero-title {
+    font-size: clamp(40px, 8vw, 72px);
+    /* Intentionally larger than display for Hero impact, could bind to separate token if strictness required */
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    margin-bottom: var(--space-6);
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin-bottom: var(--space-8);
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Grids */
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-6);
+}
+
+.service-card {
+    padding: var(--space-8);
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.force-large {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: var(--space-3);
+    display: block;
+}
+
+/* Tags */
+.tags-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+    margin: var(--space-6) 0;
+}
+
+.tag {
+    background: rgba(0, 0, 0, 0.05);
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--color-text-primary);
+}
+
+@media (prefers-color-scheme: dark) {
+    .tag {
+        background: rgba(255, 255, 255, 0.1);
+    }
+}
+
+/* Showcase */
+.showcase-wrapper {
+    margin-top: var(--space-6);
+}
+
+.showcase-link {
+    display: block;
+}
+
+.showcase-image-container {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-bottom: var(--space-4);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.showcase-link:hover .showcase-image-container {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+.showcase-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.showcase-details h3 {
+    font-size: 24px;
+    margin-bottom: 4px;
+    color: var(--color-text-primary);
+}
+
+.showcase-details p {
+    color: var(--color-text-secondary);
+    font-size: 18px;
+}
+
+/* Process Scroller */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.process-scroller {
+    display: flex;
+    gap: var(--space-6);
+    overflow-x: auto;
+    padding-bottom: var(--space-8);
+    /* Hide scrollbar */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.process-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+.process-step {
+    min-width: 260px;
+    padding: var(--space-6);
+    background: var(--color-bg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+}
+
+.step-number {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    font-weight: 600;
+    display: block;
+    margin-bottom: var(--space-4);
+}
+
+.process-step h4 {
+    font-size: 20px;
+    margin-bottom: var(--space-2);
+}
+
+.process-step p {
+    color: var(--color-text-secondary);
+    font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}

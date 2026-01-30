@@ -1,0 +1,51 @@
+:root {
+  /* Colors */
+  --color-bg: #F5F5F7; /* Apple off-white */
+  --color-surface: #FFFFFF;
+  --color-text-primary: #1D1D1F; /* Charcoal */
+  --color-text-secondary: #86868B;
+  --color-accent: #007AFF; /* Standard iOS blue, rarely used */
+  --color-border: rgba(0, 0, 0, 0.05);
+  
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.08);
+  
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  
+  /* Typography */
+  --font-family-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-size-sm: 14px;
+  --font-size-base: 17px; /* iOS standard body */
+  --font-size-lg: 20px;
+  --font-size-xl: 32px;
+  --font-size-display: 56px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #000000;
+    --color-surface: #1C1C1E;
+    --color-text-primary: #F5F5F7;
+    --color-text-secondary: #86868B;
+    --color-border: rgba(255, 255, 255, 0.1);
+    
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  }
+}

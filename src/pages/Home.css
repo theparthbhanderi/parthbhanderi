@@ -1,0 +1,98 @@
+@import './BaseHome.css';
+
+/* Custom styles for parthbhanderi.in Home */
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-6);
+}
+
+@media (max-width: 1024px) {
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.text-left {
+    text-align: left;
+}
+
+.mb-16 {
+    margin-bottom: var(--space-16);
+}
+
+.mb-12 {
+    margin-bottom: var(--space-12);
+}
+
+.mb-8 {
+    margin-bottom: var(--space-8);
+}
+
+.p-8 {
+    padding: var(--space-8);
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.work-placeholder {
+    height: 300px;
+    background: var(--color-bg-secondary);
+    width: 100%;
+}
+
+.thought-grid h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+}
+
+.thought-grid p {
+    color: var(--color-text-secondary);
+}
+
+/* UX Polish Items */
+.card-info-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-info-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.ecosystem-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-4);
+    align-items: center;
+    opacity: 0.6;
+}
+
+.ecosystem-link {
+    color: var(--color-text-primary);
+    font-weight: 500;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.ecosystem-link:hover {
+    opacity: 0.7;
+}
+
+.dot {
+    color: var(--color-border);
+}
+
+@media (max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+}
